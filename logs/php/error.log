@@ -1,0 +1,70 @@
+[06-Feb-2023 13:49:29 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "HivePress\components\hello_world" does not exist in C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\class-core.php:124
+Stack trace:
+#0 C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\class-core.php(124): ReflectionClass->__construct('HivePress\\compo...')
+#1 [internal function]: HivePress\Core->autoload('HivePress\\compo...')
+#2 C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\helpers.php(273): class_exists('\\HivePress\\comp...')
+#3 C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\class-core.php(371): HivePress\Helpers\create_class_instance('\\HivePress\\comp...')
+#4 C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\class-core.php(221): HivePress\Core->__call('get_components', Array)
+#5 C:\Users\User\Local Sites\my-test-website\app\public\wp-includes\class-wp-hook.php(308): HivePress\Core->setup('')
+#6 C:\Users\User\Local Sites\my-test-website\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#7 C:\Users\User\Local Sites\my-test-website\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 C:\Users\User\Local Sites\my-test-website\app\public\wp-settings.php(480): do_action('plugins_loaded')
+#9 C:\Users\User\Local Sites\my-test-website\app\public\wp-config.php(93): require_once('C:\\Users\\User\\L...')
+#10 C:\Users\User\Local Sites\my-test-website\app\public\wp-load.php(50): require_once('C:\\Users\\User\\L...')
+#11 C:\Users\User\Local Sites\my-test-website\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\User\\L...')
+#12 {main}
+  thrown in C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\class-core.php on line 124
+[06-Feb-2023 14:21:45 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "HivePress\controllers\hello_world" does not exist in C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\class-core.php:124
+Stack trace:
+#0 C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\class-core.php(124): ReflectionClass->__construct('HivePress\\contr...')
+#1 [internal function]: HivePress\Core->autoload('HivePress\\contr...')
+#2 C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\helpers.php(273): class_exists('\\HivePress\\cont...')
+#3 C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\class-core.php(371): HivePress\Helpers\create_class_instance('\\HivePress\\cont...')
+#4 C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\components\class-router.php(86): HivePress\Core->__call('get_controllers', Array)
+#5 C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\components\class-router.php(411): HivePress\Components\Router->get_routes()
+#6 C:\Users\User\Local Sites\my-test-website\app\public\wp-includes\class-wp-hook.php(308): HivePress\Components\Router->add_rewrite_rules('')
+#7 C:\Users\User\Local Sites\my-test-website\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#8 C:\Users\User\Local Sites\my-test-website\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\User\Local Sites\my-test-website\app\public\wp-settings.php(617): do_action('init')
+#10 C:\Users\User\Local Sites\my-test-website\app\public\wp-config.php(93): require_once('C:\\Users\\User\\L...')
+#11 C:\Users\User\Local Sites\my-test-website\app\public\wp-load.php(50): require_once('C:\\Users\\User\\L...')
+#12 C:\Users\User\Local Sites\my-test-website\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\User\\L...')
+#13 {main}
+  thrown in C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\class-core.php on line 124
+[06-Feb-2023 14:23:46 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "HivePress\controllers\hello_world" does not exist in C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\class-core.php:124
+Stack trace:
+#0 C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\class-core.php(124): ReflectionClass->__construct('HivePress\\contr...')
+#1 [internal function]: HivePress\Core->autoload('HivePress\\contr...')
+#2 C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\helpers.php(273): class_exists('\\HivePress\\cont...')
+#3 C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\class-core.php(371): HivePress\Helpers\create_class_instance('\\HivePress\\cont...')
+#4 C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\components\class-router.php(86): HivePress\Core->__call('get_controllers', Array)
+#5 C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\components\class-router.php(411): HivePress\Components\Router->get_routes()
+#6 C:\Users\User\Local Sites\my-test-website\app\public\wp-includes\class-wp-hook.php(308): HivePress\Components\Router->add_rewrite_rules('')
+#7 C:\Users\User\Local Sites\my-test-website\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#8 C:\Users\User\Local Sites\my-test-website\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\User\Local Sites\my-test-website\app\public\wp-settings.php(617): do_action('init')
+#10 C:\Users\User\Local Sites\my-test-website\app\public\wp-config.php(93): require_once('C:\\Users\\User\\L...')
+#11 C:\Users\User\Local Sites\my-test-website\app\public\wp-load.php(50): require_once('C:\\Users\\User\\L...')
+#12 C:\Users\User\Local Sites\my-test-website\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\User\\L...')
+#13 {main}
+  thrown in C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\class-core.php on line 124
+[06-Feb-2023 14:25:47 UTC] PHP Fatal error:  Uncaught ReflectionException: Class "HivePress\controllers\hello_world" does not exist in C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\class-core.php:124
+Stack trace:
+#0 C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\class-core.php(124): ReflectionClass->__construct('HivePress\\contr...')
+#1 [internal function]: HivePress\Core->autoload('HivePress\\contr...')
+#2 C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\helpers.php(273): class_exists('\\HivePress\\cont...')
+#3 C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\class-core.php(371): HivePress\Helpers\create_class_instance('\\HivePress\\cont...')
+#4 C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\components\class-router.php(86): HivePress\Core->__call('get_controllers', Array)
+#5 C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\components\class-router.php(411): HivePress\Components\Router->get_routes()
+#6 C:\Users\User\Local Sites\my-test-website\app\public\wp-includes\class-wp-hook.php(308): HivePress\Components\Router->add_rewrite_rules('')
+#7 C:\Users\User\Local Sites\my-test-website\app\public\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#8 C:\Users\User\Local Sites\my-test-website\app\public\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\Users\User\Local Sites\my-test-website\app\public\wp-settings.php(617): do_action('init')
+#10 C:\Users\User\Local Sites\my-test-website\app\public\wp-config.php(93): require_once('C:\\Users\\User\\L...')
+#11 C:\Users\User\Local Sites\my-test-website\app\public\wp-load.php(50): require_once('C:\\Users\\User\\L...')
+#12 C:\Users\User\Local Sites\my-test-website\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\User\\L...')
+#13 {main}
+  thrown in C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hivepress\includes\class-core.php on line 124
+[06-Feb-2023 15:29:05 UTC] PHP Warning:  An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/forums/">support forums</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\Users\User\Local Sites\my-test-website\app\public\wp-admin\includes\plugin-install.php on line 183
+[08-Feb-2023 13:29:17 UTC] PHP Parse error:  syntax error, unexpected token "public" in C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hello-world\includes\controllers\class-hello-world.php on line 99
+[08-Feb-2023 13:29:18 UTC] PHP Parse error:  syntax error, unexpected token "public" in C:\Users\User\Local Sites\my-test-website\app\public\wp-content\plugins\hello-world\includes\controllers\class-hello-world.php on line 99
